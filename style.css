@@ -1,0 +1,168 @@
+body {
+    background-color: hsl(229, 57%, 11%);
+    color: white;
+    font-size: 14px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    height: 100vh;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.bg-image {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 55%;
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 2rem;
+}
+
+.container > div {
+    background-color:  hsl(228, 56%, 26%);
+    padding: 25px 45px;
+}
+
+.item-1 {
+    border-radius: 8px 100px 8px 8px;
+    width: 270px;
+    position: relative;
+    bottom: 23px;
+
+}
+
+.item-2 {
+    border-radius: 8px 8px 8px 8px;
+    width: 470px;
+}
+
+.item-1 > img {
+    margin-top: 20px;
+}
+
+.icons {
+    margin-top: 15px;
+}
+
+.icons img {
+    background-color: hsl(229, 57%, 11%);
+    padding: 12px;
+    margin: 0.5rem;
+    border-radius: 8px;
+}
+
+#first {
+    margin-left: 0;
+}
+
+p {
+    opacity: 0.8;
+}
+
+span {
+    font-weight: 900;
+}
+
+.circle {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    border-radius: 100%;
+    position: relative;
+    top: 21.8px;
+    left: 365px;
+    z-index: 1;
+    border: none;
+}
+
+meter {
+    width: 100%;
+    height: 30px;
+    margin-top: 0;
+}
+
+meter::-webkit-meter-bar {
+    background: none;
+    background-color: hsl(229, 57%, 11%);
+    padding: 2px;
+    box-shadow: 0 3px 3px -3px #333 inset;
+}
+  
+meter::-webkit-meter-optimum-value {
+    box-shadow: 0 3px 3px -3px #999 inset;
+    background-image: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 16px;
+    background-size: 100% 100%;
+}
+
+.slider-value {
+    display: inline-block;
+    margin-top: 0;
+    font-weight: 900;
+}
+
+.slider-value1 {
+    position: relative;
+    left: 380px;
+}
+
+.paragraph {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.chat-img {
+    display: inline-block;
+    position: absolute;
+    top: 150px;
+    right: 215px;
+    padding: 0;
+    margin: 0;
+    background-color: antiquewhite;
+    height: 100px;
+    width: 180px;
+}
+
+
+/* Responsive design */
+
+@media (max-width: 450px) {
+
+    .bg-image {
+        display: none;
+    }
+
+    body {
+        background-image: url(./images/bg-mobile.png);
+    }
+
+    .item-1 {
+        width: 100%;
+    }
+
+    .item-2 {
+        width: 100%;
+    }
+
+    .chat-img {
+        display: none;
+    }
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
